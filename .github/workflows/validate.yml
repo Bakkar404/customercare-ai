@@ -1,0 +1,12 @@
+name: Validate publication files
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check workflow structure and publishing hygiene
+        shell: pwsh
+        run: ./scripts/validate.ps1
