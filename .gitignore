@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+*private*.json
+raw-exports/
+executions/
+screenshots/
+work/
+node_modules/
+.DS_Store
+Thumbs.db
